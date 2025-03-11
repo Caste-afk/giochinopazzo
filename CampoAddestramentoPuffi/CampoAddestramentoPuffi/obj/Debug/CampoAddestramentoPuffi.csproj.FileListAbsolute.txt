@@ -9,3 +9,13 @@ C:\Users\10933991\Desktop\C#\giochinopazzo\CampoAddestramentoPuffi\CampoAddestra
 C:\Users\10933991\Desktop\C#\giochinopazzo\CampoAddestramentoPuffi\CampoAddestramentoPuffi\obj\Debug\CampoAddestramentoPuffi.csproj.CoreCompileInputs.cache
 C:\Users\10933991\Desktop\C#\giochinopazzo\CampoAddestramentoPuffi\CampoAddestramentoPuffi\obj\Debug\CampoAddestramentoPuffi.exe
 C:\Users\10933991\Desktop\C#\giochinopazzo\CampoAddestramentoPuffi\CampoAddestramentoPuffi\obj\Debug\CampoAddestramentoPuffi.pdb
+C:\Users\Eros\Desktop\PROGRAMMAZIONE\progetti_C#\giochinopazzo\CampoAddestramentoPuffi\CampoAddestramentoPuffi\bin\Debug\CampoAddestramentoPuffi.exe.config
+C:\Users\Eros\Desktop\PROGRAMMAZIONE\progetti_C#\giochinopazzo\CampoAddestramentoPuffi\CampoAddestramentoPuffi\bin\Debug\CampoAddestramentoPuffi.exe
+C:\Users\Eros\Desktop\PROGRAMMAZIONE\progetti_C#\giochinopazzo\CampoAddestramentoPuffi\CampoAddestramentoPuffi\bin\Debug\CampoAddestramentoPuffi.pdb
+C:\Users\Eros\Desktop\PROGRAMMAZIONE\progetti_C#\giochinopazzo\CampoAddestramentoPuffi\CampoAddestramentoPuffi\obj\Debug\CampoAddestramentoPuffi.csproj.AssemblyReference.cache
+C:\Users\Eros\Desktop\PROGRAMMAZIONE\progetti_C#\giochinopazzo\CampoAddestramentoPuffi\CampoAddestramentoPuffi\obj\Debug\CampoAddestramentoPuffi.Form1.resources
+C:\Users\Eros\Desktop\PROGRAMMAZIONE\progetti_C#\giochinopazzo\CampoAddestramentoPuffi\CampoAddestramentoPuffi\obj\Debug\CampoAddestramentoPuffi.Properties.Resources.resources
+C:\Users\Eros\Desktop\PROGRAMMAZIONE\progetti_C#\giochinopazzo\CampoAddestramentoPuffi\CampoAddestramentoPuffi\obj\Debug\CampoAddestramentoPuffi.csproj.GenerateResource.cache
+C:\Users\Eros\Desktop\PROGRAMMAZIONE\progetti_C#\giochinopazzo\CampoAddestramentoPuffi\CampoAddestramentoPuffi\obj\Debug\CampoAddestramentoPuffi.csproj.CoreCompileInputs.cache
+C:\Users\Eros\Desktop\PROGRAMMAZIONE\progetti_C#\giochinopazzo\CampoAddestramentoPuffi\CampoAddestramentoPuffi\obj\Debug\CampoAddestramentoPuffi.exe
+C:\Users\Eros\Desktop\PROGRAMMAZIONE\progetti_C#\giochinopazzo\CampoAddestramentoPuffi\CampoAddestramentoPuffi\obj\Debug\CampoAddestramentoPuffi.pdb

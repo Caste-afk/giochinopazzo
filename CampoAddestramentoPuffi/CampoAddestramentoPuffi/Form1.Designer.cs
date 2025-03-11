@@ -29,12 +29,15 @@
         private void InitializeComponent()
         {
             this.pnl_campo = new System.Windows.Forms.Panel();
+            this.pnl_player = new System.Windows.Forms.Panel();
             this.btn_sinistra = new System.Windows.Forms.Button();
             this.btn_giu = new System.Windows.Forms.Button();
             this.btn_su = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btn_destra = new System.Windows.Forms.Button();
-            this.pnl_player = new System.Windows.Forms.Panel();
+            this.pnl_casa = new System.Windows.Forms.Panel();
+            this.lbl_punteggio1 = new System.Windows.Forms.Label();
+            this.lbl_punteggio = new System.Windows.Forms.Label();
             this.pnl_campo.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -42,11 +45,20 @@
             // pnl_campo
             // 
             this.pnl_campo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnl_campo.Controls.Add(this.pnl_casa);
             this.pnl_campo.Controls.Add(this.pnl_player);
             this.pnl_campo.Location = new System.Drawing.Point(12, 12);
             this.pnl_campo.Name = "pnl_campo";
-            this.pnl_campo.Size = new System.Drawing.Size(540, 420);
+            this.pnl_campo.Size = new System.Drawing.Size(560, 440);
             this.pnl_campo.TabIndex = 0;
+            // 
+            // pnl_player
+            // 
+            this.pnl_player.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnl_player.Location = new System.Drawing.Point(0, 0);
+            this.pnl_player.Name = "pnl_player";
+            this.pnl_player.Size = new System.Drawing.Size(40, 40);
+            this.pnl_player.TabIndex = 0;
             // 
             // btn_sinistra
             // 
@@ -85,15 +97,16 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel1.Controls.Add(this.btn_su, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.btn_giu, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.btn_sinistra, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btn_destra, 2, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(568, 281);
+            this.tableLayoutPanel1.Controls.Add(this.btn_su, 1, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(586, 297);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(220, 157);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
@@ -108,19 +121,37 @@
             this.btn_destra.UseVisualStyleBackColor = true;
             this.btn_destra.Click += new System.EventHandler(this.btn_destra_Click);
             // 
-            // pnl_player
+            // pnl_casa
             // 
-            this.pnl_player.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pnl_player.Location = new System.Drawing.Point(3, 3);
-            this.pnl_player.Name = "pnl_player";
-            this.pnl_player.Size = new System.Drawing.Size(40, 40);
-            this.pnl_player.TabIndex = 0;
+            this.pnl_casa.BackColor = System.Drawing.Color.IndianRed;
+            this.pnl_casa.Location = new System.Drawing.Point(458, 30);
+            this.pnl_casa.Name = "pnl_casa";
+            this.pnl_casa.Size = new System.Drawing.Size(40, 40);
+            this.pnl_casa.TabIndex = 1;
+            // 
+            // lbl_punteggio1
+            // 
+            this.lbl_punteggio1.Location = new System.Drawing.Point(589, 14);
+            this.lbl_punteggio1.Name = "lbl_punteggio1";
+            this.lbl_punteggio1.Size = new System.Drawing.Size(203, 40);
+            this.lbl_punteggio1.TabIndex = 1;
+            this.lbl_punteggio1.Text = "PUNTEGGIO";
+            // 
+            // lbl_punteggio
+            // 
+            this.lbl_punteggio.Location = new System.Drawing.Point(589, 44);
+            this.lbl_punteggio.Name = "lbl_punteggio";
+            this.lbl_punteggio.Size = new System.Drawing.Size(203, 40);
+            this.lbl_punteggio.TabIndex = 2;
+            this.lbl_punteggio.Text = "0";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(818, 466);
+            this.Controls.Add(this.lbl_punteggio);
+            this.Controls.Add(this.lbl_punteggio1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.pnl_campo);
             this.Name = "Form1";
@@ -140,6 +171,9 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button btn_destra;
         private System.Windows.Forms.Panel pnl_player;
+        private System.Windows.Forms.Panel pnl_casa;
+        private System.Windows.Forms.Label lbl_punteggio1;
+        private System.Windows.Forms.Label lbl_punteggio;
     }
 }
 
