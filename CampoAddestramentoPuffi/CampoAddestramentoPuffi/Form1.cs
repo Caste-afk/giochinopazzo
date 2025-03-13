@@ -52,8 +52,10 @@ namespace CampoAddestramentoPuffi
     public partial class Form1 : Form
     {
         private Punto player;
+        private Punto enemy;
         private Punto casa;
 
+        public bool turno = true; // true = Puffo, false = Gargamella
         public int punteggio = 0;
 
         public Form1()
@@ -61,36 +63,69 @@ namespace CampoAddestramentoPuffi
             InitializeComponent();
             SpawnCasa();
             player = new Punto(pnl_player.Location.X, pnl_player.Location.Y);
+            enemy = new Punto(pnl_gargamella.Location.X, pnl_gargamella.Location.Y);
         }
 
         private void btn_su_Click(object sender, EventArgs e)
         {
-            player.Muovi(0);
-            AggiornaPosizionePlayer();
+            if (turno)
+            {
+                player.Muovi(0);
+                AggiornaPosizione(pnl_player, player);
+            }
+            else
+            {
+                player.Muovi(0);
+                AggiornaPosizione(pnl_gargamella, enemy);
+            }
         }
 
         private void btn_destra_Click(object sender, EventArgs e)
         {
-            player.Muovi(1);
-            AggiornaPosizionePlayer();
+            if (turno)
+            {
+                player.Muovi(1);
+                AggiornaPosizione(pnl_player, player);
+            }
+            else
+            {
+                player.Muovi(1);
+                AggiornaPosizione(pnl_gargamella, enemy);
+            }
         }
 
 
         private void btn_giu_Click(object sender, EventArgs e)
         {
-            player.Muovi(2);
-            AggiornaPosizionePlayer();
+            if (turno)
+            {
+                player.Muovi(2);
+                AggiornaPosizione(pnl_player, player);
+            }
+            else
+            {
+                player.Muovi(2);
+                AggiornaPosizione(pnl_gargamella, enemy);
+            }
         }
 
         private void btn_sinistra_Click(object sender, EventArgs e)
         {
-            player.Muovi(3);
-            AggiornaPosizionePlayer();
+            if (turno)
+            {
+                player.Muovi(3);
+                AggiornaPosizione(pnl_player, player);
+            }
+            else
+            {
+                player.Muovi(3);
+                AggiornaPosizione(pnl_gargamella, enemy);
+            }
         }
 
-        private void AggiornaPosizionePlayer()
+        private void AggiornaPosizione(Panel oggetto, Punto nome )
         {
-            pnl_player.Location = new Point(player.X, player.Y);
+            oggetto.Location = new Point(nome.X, nome.Y);
             bool preso = ControllaPunto();
             if (preso)
             {
@@ -119,14 +154,23 @@ namespace CampoAddestramentoPuffi
 
         private bool ControllaPunto()
         {
-            bool preso = false;
+            bool presocasa = false;
+            bool presopuffo = false;
+            bool presoalbero = false;
+
             if (player.X == casa.X && player.Y == casa.Y)
             {
-                preso = true;
+                presocasa = true;
                 punteggio++;
                 lbl_punteggio.Text = punteggio.ToString();
             }
-            return preso;
+
+            if (player.X == enemy.X && player.X == enemy.Y)
+            {
+                presopuffo = true;
+
+            }
+            return presocasa;
         }
 
 

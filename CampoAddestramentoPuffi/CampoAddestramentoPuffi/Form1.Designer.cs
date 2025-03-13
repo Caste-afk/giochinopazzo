@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.pnl_campo = new System.Windows.Forms.Panel();
+            this.pnl_gargamella = new System.Windows.Forms.Panel();
+            this.pnl_casa = new System.Windows.Forms.Panel();
             this.pnl_player = new System.Windows.Forms.Panel();
             this.btn_sinistra = new System.Windows.Forms.Button();
             this.btn_giu = new System.Windows.Forms.Button();
             this.btn_su = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btn_destra = new System.Windows.Forms.Button();
-            this.pnl_casa = new System.Windows.Forms.Panel();
             this.lbl_punteggio1 = new System.Windows.Forms.Label();
             this.lbl_punteggio = new System.Windows.Forms.Label();
             this.pnl_campo.SuspendLayout();
@@ -45,12 +46,29 @@
             // pnl_campo
             // 
             this.pnl_campo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnl_campo.Controls.Add(this.pnl_gargamella);
             this.pnl_campo.Controls.Add(this.pnl_casa);
             this.pnl_campo.Controls.Add(this.pnl_player);
             this.pnl_campo.Location = new System.Drawing.Point(12, 12);
             this.pnl_campo.Name = "pnl_campo";
             this.pnl_campo.Size = new System.Drawing.Size(560, 440);
             this.pnl_campo.TabIndex = 0;
+            // 
+            // pnl_gargamella
+            // 
+            this.pnl_gargamella.BackColor = System.Drawing.Color.Black;
+            this.pnl_gargamella.Location = new System.Drawing.Point(520, 400);
+            this.pnl_gargamella.Name = "pnl_gargamella";
+            this.pnl_gargamella.Size = new System.Drawing.Size(40, 40);
+            this.pnl_gargamella.TabIndex = 2;
+            // 
+            // pnl_casa
+            // 
+            this.pnl_casa.BackColor = System.Drawing.Color.IndianRed;
+            this.pnl_casa.Location = new System.Drawing.Point(458, 30);
+            this.pnl_casa.Name = "pnl_casa";
+            this.pnl_casa.Size = new System.Drawing.Size(40, 40);
+            this.pnl_casa.TabIndex = 1;
             // 
             // pnl_player
             // 
@@ -121,14 +139,6 @@
             this.btn_destra.UseVisualStyleBackColor = true;
             this.btn_destra.Click += new System.EventHandler(this.btn_destra_Click);
             // 
-            // pnl_casa
-            // 
-            this.pnl_casa.BackColor = System.Drawing.Color.IndianRed;
-            this.pnl_casa.Location = new System.Drawing.Point(458, 30);
-            this.pnl_casa.Name = "pnl_casa";
-            this.pnl_casa.Size = new System.Drawing.Size(40, 40);
-            this.pnl_casa.TabIndex = 1;
-            // 
             // lbl_punteggio1
             // 
             this.lbl_punteggio1.Location = new System.Drawing.Point(589, 14);
@@ -174,6 +184,7 @@
         private System.Windows.Forms.Panel pnl_casa;
         private System.Windows.Forms.Label lbl_punteggio1;
         private System.Windows.Forms.Label lbl_punteggio;
+        private System.Windows.Forms.Panel pnl_gargamella;
     }
 }
 
