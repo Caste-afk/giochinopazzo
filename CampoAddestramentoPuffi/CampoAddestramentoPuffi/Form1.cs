@@ -56,12 +56,13 @@ namespace CampoAddestramentoPuffi
         private Punto casa;
 
         public bool turno = true; // true = Puffo, false = Gargamella
-        public int punteggio = 0;
+        public int punteggiopuffo = 0;
+        public int punteggiogargamella = 0;
 
         public Form1()
         {
             InitializeComponent();
-            SpawnCasa();
+            Spawn();
             player = new Punto(pnl_player.Location.X, pnl_player.Location.Y);
             enemy = new Punto(pnl_gargamella.Location.X, pnl_gargamella.Location.Y);
         }
@@ -75,7 +76,7 @@ namespace CampoAddestramentoPuffi
             }
             else
             {
-                player.Muovi(0);
+                enemy.Muovi(0);
                 AggiornaPosizione(pnl_gargamella, enemy);
             }
         }
@@ -89,7 +90,7 @@ namespace CampoAddestramentoPuffi
             }
             else
             {
-                player.Muovi(1);
+                enemy.Muovi(1);
                 AggiornaPosizione(pnl_gargamella, enemy);
             }
         }
@@ -104,7 +105,7 @@ namespace CampoAddestramentoPuffi
             }
             else
             {
-                player.Muovi(2);
+                enemy.Muovi(2);
                 AggiornaPosizione(pnl_gargamella, enemy);
             }
         }
@@ -118,61 +119,72 @@ namespace CampoAddestramentoPuffi
             }
             else
             {
-                player.Muovi(3);
+                enemy.Muovi(3);
                 AggiornaPosizione(pnl_gargamella, enemy);
             }
         }
 
         private void AggiornaPosizione(Panel oggetto, Punto nome )
         {
-            oggetto.Location = new Point(nome.X, nome.Y);
+            oggetto.Location = new Point(nome.X, nome.Y); //uso il new Point per...
             bool preso = ControllaPunto();
             if (preso)
             {
-                SpawnCasa();
+                Spawn();
             }
+            turno = !turno;
         }
 
-        private void SpawnCasa()
+
+        //------------------------------------ERRORE QUI------------------------------------|
+        private void Spawn()
         {
             Random rnd = new Random();
             int x = 0;
             int y = 0;
-            do
-            {
-                x = rnd.Next(0, 501);
-            } while (x % 40 != 0);
+            Punto[] punti = {player, enemy, casa};
+            Panel[] pannelli = { pnl_player, pnl_gargamella, pnl_casa };
 
-            do
+            for (int i = 0; i < punti.Length; i++)
             {
-                y = rnd.Next(0, 381);
-            } while (y % 40 != 0);
+                do
+                {
+                    x = rnd.Next(0, 501);
+                } while (x % 40 != 0);
 
-            casa = new Punto(x, y);
-            pnl_casa.Location = new Point (casa.X, casa.Y);
+                do
+                {
+                    y = rnd.Next(0, 381);
+                } while (y % 40 != 0);
+
+                punti[i] = new Punto(x, y);
+                pannelli[i].Location = new Point(punti[i].X, punti[i].Y);
+            }
         }
+        //------------------------------------ERRORE QUI------------------------------------|
 
         private bool ControllaPunto()
         {
-            bool presocasa = false;
-            bool presopuffo = false;
-            bool presoalbero = false;
-
+            bool preso = false;
+            MessageBox.Show($"posizione puffo: {player.X}, {player.Y} | posizione gargamella: {enemy.X}, {enemy.Y} | posizione casa: {casa.X}, {casa.Y}");
             if (player.X == casa.X && player.Y == casa.Y)
             {
-                presocasa = true;
-                punteggio++;
-                lbl_punteggio.Text = punteggio.ToString();
+                preso = true;
+                punteggiopuffo++;
             }
 
             if (player.X == enemy.X && player.X == enemy.Y)
             {
-                presopuffo = true;
-
+                preso = true;
+                punteggiogargamella++;
+                punteggiopuffo--;
             }
-            return presocasa;
+
+
+            lbl_punteggiog.Text = punteggiogargamella.ToString();
+            lbl_punteggiop.Text = punteggiopuffo.ToString();
+
+            return preso;
         }
-
-
     }
 }

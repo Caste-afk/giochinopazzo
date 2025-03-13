@@ -38,7 +38,9 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btn_destra = new System.Windows.Forms.Button();
             this.lbl_punteggio1 = new System.Windows.Forms.Label();
-            this.lbl_punteggio = new System.Windows.Forms.Label();
+            this.lbl_punteggiop = new System.Windows.Forms.Label();
+            this.lbl_punteggiog = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.pnl_campo.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -145,22 +147,40 @@
             this.lbl_punteggio1.Name = "lbl_punteggio1";
             this.lbl_punteggio1.Size = new System.Drawing.Size(203, 40);
             this.lbl_punteggio1.TabIndex = 1;
-            this.lbl_punteggio1.Text = "PUNTEGGIO";
+            this.lbl_punteggio1.Text = "PUNTEGGIO PUFFO\r\n";
             // 
-            // lbl_punteggio
+            // lbl_punteggiop
             // 
-            this.lbl_punteggio.Location = new System.Drawing.Point(589, 44);
-            this.lbl_punteggio.Name = "lbl_punteggio";
-            this.lbl_punteggio.Size = new System.Drawing.Size(203, 40);
-            this.lbl_punteggio.TabIndex = 2;
-            this.lbl_punteggio.Text = "0";
+            this.lbl_punteggiop.Location = new System.Drawing.Point(589, 44);
+            this.lbl_punteggiop.Name = "lbl_punteggiop";
+            this.lbl_punteggiop.Size = new System.Drawing.Size(203, 40);
+            this.lbl_punteggiop.TabIndex = 2;
+            this.lbl_punteggiop.Text = "0";
+            // 
+            // lbl_punteggiog
+            // 
+            this.lbl_punteggiog.Location = new System.Drawing.Point(589, 114);
+            this.lbl_punteggiog.Name = "lbl_punteggiog";
+            this.lbl_punteggiog.Size = new System.Drawing.Size(203, 40);
+            this.lbl_punteggiog.TabIndex = 4;
+            this.lbl_punteggiog.Text = "0";
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(589, 84);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(203, 40);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "PUNTEGGIO GARGAMELLA";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(818, 466);
-            this.Controls.Add(this.lbl_punteggio);
+            this.Controls.Add(this.lbl_punteggiog);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbl_punteggiop);
             this.Controls.Add(this.lbl_punteggio1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.pnl_campo);
@@ -183,8 +203,10 @@
         private System.Windows.Forms.Panel pnl_player;
         private System.Windows.Forms.Panel pnl_casa;
         private System.Windows.Forms.Label lbl_punteggio1;
-        private System.Windows.Forms.Label lbl_punteggio;
+        private System.Windows.Forms.Label lbl_punteggiop;
         private System.Windows.Forms.Panel pnl_gargamella;
+        private System.Windows.Forms.Label lbl_punteggiog;
+        private System.Windows.Forms.Label label2;
     }
 }
 
