@@ -1,14 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\erosc\\Desktop\\scuola\\informatica\\C#\\giochinopazzo\\CampoAddestramentoPuffi\\",
+  "WorkspaceRootPath": "C:\\Users\\Eros\\Desktop\\PROGRAMMAZIONE\\progetti_C#\\giochinopazzo\\CampoAddestramentoPuffi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7A1A5F79-D323-4296-A21B-B493D47E92C1}|CampoAddestramentoPuffi\\CampoAddestramentoPuffi.csproj|C:\\Users\\erosc\\Desktop\\scuola\\informatica\\C#\\giochinopazzo\\CampoAddestramentoPuffi\\campoaddestramentopuffi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7A1A5F79-D323-4296-A21B-B493D47E92C1}|CampoAddestramentoPuffi\\CampoAddestramentoPuffi.csproj|c:\\users\\eros\\desktop\\programmazione\\progetti_c#\\giochinopazzo\\campoaddestramentopuffi\\campoaddestramentopuffi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7A1A5F79-D323-4296-A21B-B493D47E92C1}|CampoAddestramentoPuffi\\CampoAddestramentoPuffi.csproj|solutionrelative:campoaddestramentopuffi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A1A5F79-D323-4296-A21B-B493D47E92C1}|CampoAddestramentoPuffi\\CampoAddestramentoPuffi.csproj|c:\\users\\erosc\\desktop\\scuola\\informatica\\c#\\giochinopazzo\\campoaddestramentopuffi\\campoaddestramentopuffi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7A1A5F79-D323-4296-A21B-B493D47E92C1}|CampoAddestramentoPuffi\\CampoAddestramentoPuffi.csproj|C:\\Users\\Eros\\Desktop\\PROGRAMMAZIONE\\progetti_C#\\giochinopazzo\\CampoAddestramentoPuffi\\campoaddestramentopuffi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7A1A5F79-D323-4296-A21B-B493D47E92C1}|CampoAddestramentoPuffi\\CampoAddestramentoPuffi.csproj|solutionrelative:campoaddestramentopuffi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A1A5F79-D323-4296-A21B-B493D47E92C1}|CampoAddestramentoPuffi\\CampoAddestramentoPuffi.csproj|C:\\Users\\Eros\\Desktop\\PROGRAMMAZIONE\\progetti_C#\\giochinopazzo\\CampoAddestramentoPuffi\\campoaddestramentopuffi\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A1A5F79-D323-4296-A21B-B493D47E92C1}|CampoAddestramentoPuffi\\CampoAddestramentoPuffi.csproj|solutionrelative:campoaddestramentopuffi\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A1A5F79-D323-4296-A21B-B493D47E92C1}|CampoAddestramentoPuffi\\CampoAddestramentoPuffi.csproj|C:\\Users\\Eros\\Desktop\\PROGRAMMAZIONE\\progetti_C#\\giochinopazzo\\CampoAddestramentoPuffi\\campoaddestramentopuffi\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{7A1A5F79-D323-4296-A21B-B493D47E92C1}|CampoAddestramentoPuffi\\CampoAddestramentoPuffi.csproj|solutionrelative:campoaddestramentopuffi\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,17 +26,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "C:\\Users\\Eros\\Desktop\\PROGRAMMAZIONE\\progetti_C#\\giochinopazzo\\CampoAddestramentoPuffi\\CampoAddestramentoPuffi\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "CampoAddestramentoPuffi\\Properties\\Resources.resx",
+              "ToolTip": "C:\\Users\\Eros\\Desktop\\PROGRAMMAZIONE\\progetti_C#\\giochinopazzo\\CampoAddestramentoPuffi\\CampoAddestramentoPuffi\\Properties\\Resources.resx",
+              "RelativeToolTip": "CampoAddestramentoPuffi\\Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-03-14T21:11:16.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Eros\\Desktop\\PROGRAMMAZIONE\\progetti_C#\\giochinopazzo\\CampoAddestramentoPuffi\\CampoAddestramentoPuffi\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "CampoAddestramentoPuffi\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Eros\\Desktop\\PROGRAMMAZIONE\\progetti_C#\\giochinopazzo\\CampoAddestramentoPuffi\\CampoAddestramentoPuffi\\Form1.Designer.cs*",
+              "RelativeToolTip": "CampoAddestramentoPuffi\\Form1.Designer.cs*",
+              "ViewState": "AgIAANAAAAAAAAAAAAAewNAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T21:00:33.734Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\erosc\\Desktop\\scuola\\informatica\\C#\\giochinopazzo\\CampoAddestramentoPuffi\\CampoAddestramentoPuffi\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Eros\\Desktop\\PROGRAMMAZIONE\\progetti_C#\\giochinopazzo\\CampoAddestramentoPuffi\\CampoAddestramentoPuffi\\Form1.cs",
               "RelativeDocumentMoniker": "CampoAddestramentoPuffi\\Form1.cs",
-              "ToolTip": "C:\\Users\\erosc\\Desktop\\scuola\\informatica\\C#\\giochinopazzo\\CampoAddestramentoPuffi\\CampoAddestramentoPuffi\\Form1.cs",
-              "RelativeToolTip": "CampoAddestramentoPuffi\\Form1.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAgwF8AAAAWAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Eros\\Desktop\\PROGRAMMAZIONE\\progetti_C#\\giochinopazzo\\CampoAddestramentoPuffi\\CampoAddestramentoPuffi\\Form1.cs*",
+              "RelativeToolTip": "CampoAddestramentoPuffi\\Form1.cs*",
+              "ViewState": "AgIAAN4AAAAAAAAAAAAmwPIAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-11T20:02:23.525Z",
               "EditorCaption": ""
@@ -37,10 +74,10 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs [Progettazione]",
-              "DocumentMoniker": "C:\\Users\\erosc\\Desktop\\scuola\\informatica\\C#\\giochinopazzo\\CampoAddestramentoPuffi\\CampoAddestramentoPuffi\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Eros\\Desktop\\PROGRAMMAZIONE\\progetti_C#\\giochinopazzo\\CampoAddestramentoPuffi\\CampoAddestramentoPuffi\\Form1.cs",
               "RelativeDocumentMoniker": "CampoAddestramentoPuffi\\Form1.cs",
-              "ToolTip": "C:\\Users\\erosc\\Desktop\\scuola\\informatica\\C#\\giochinopazzo\\CampoAddestramentoPuffi\\CampoAddestramentoPuffi\\Form1.cs [Progettazione]",
-              "RelativeToolTip": "CampoAddestramentoPuffi\\Form1.cs [Progettazione]",
+              "ToolTip": "C:\\Users\\Eros\\Desktop\\PROGRAMMAZIONE\\progetti_C#\\giochinopazzo\\CampoAddestramentoPuffi\\CampoAddestramentoPuffi\\Form1.cs [Progettazione]*",
+              "RelativeToolTip": "CampoAddestramentoPuffi\\Form1.cs [Progettazione]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-11T20:02:23.749Z",
               "EditorCaption": " [Progettazione]"
