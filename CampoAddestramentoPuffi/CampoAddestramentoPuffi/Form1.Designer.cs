@@ -108,9 +108,9 @@
             this.btn_su.BackColor = System.Drawing.Color.Transparent;
             this.btn_su.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_su.Image = global::CampoAddestramentoPuffi.Properties.Resources.su;
-            this.btn_su.Location = new System.Drawing.Point(76, 3);
+            this.btn_su.Location = new System.Drawing.Point(77, 3);
             this.btn_su.Name = "btn_su";
-            this.btn_su.Size = new System.Drawing.Size(67, 72);
+            this.btn_su.Size = new System.Drawing.Size(66, 72);
             this.btn_su.TabIndex = 0;
             this.btn_su.UseVisualStyleBackColor = false;
             this.btn_su.Click += new System.EventHandler(this.btn_su_Click);
@@ -119,15 +119,15 @@
             // 
             this.tableLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.63636F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.72727F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel1.Controls.Add(this.btn_giu, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btn_sinistra, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btn_destra, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.btn_su, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btn_sinistra, 0, 0);
             this.tableLayoutPanel1.ForeColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(586, 297);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(591, 297);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -141,9 +141,9 @@
             this.btn_giu.BackColor = System.Drawing.Color.Transparent;
             this.btn_giu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_giu.Image = global::CampoAddestramentoPuffi.Properties.Resources.giu;
-            this.btn_giu.Location = new System.Drawing.Point(76, 81);
+            this.btn_giu.Location = new System.Drawing.Point(77, 81);
             this.btn_giu.Name = "btn_giu";
-            this.btn_giu.Size = new System.Drawing.Size(67, 73);
+            this.btn_giu.Size = new System.Drawing.Size(66, 73);
             this.btn_giu.TabIndex = 1;
             this.btn_giu.UseVisualStyleBackColor = false;
             this.btn_giu.Click += new System.EventHandler(this.btn_giu_Click);
@@ -267,7 +267,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(818, 466);
+            this.ClientSize = new System.Drawing.Size(822, 466);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);

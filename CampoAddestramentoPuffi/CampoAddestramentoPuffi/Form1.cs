@@ -63,9 +63,8 @@ namespace CampoAddestramentoPuffi
         private Punto player;
         private Punto enemy;
         private Punto casa;
-
-        private Panel[] pnl_alberi;
         private Punto[] PuntoAlbero;
+        private Panel[] pnl_alberi;
 
         public bool turno = true; // true = Puffo, false = Gargamella
         public int punteggiopuffo = 0;
@@ -73,6 +72,7 @@ namespace CampoAddestramentoPuffi
 
         public Form1()
         {
+
             InitializeComponent();
             SpawnAlberi(); // Genera gli alberi PRIMA di spawnare gli altri elementi
             (player, enemy, casa) = Spawn(); // Spawna casa, giocatore e nemico
@@ -123,6 +123,39 @@ namespace CampoAddestramentoPuffi
             ControllaPunto(n);
             turno = !turno;
         }
+        private void ControllaPunto(int n)
+        {
+            bool preso = false;
+            if (player.X == casa.X && player.Y == casa.Y)
+            {
+                preso = true;
+                punteggiopuffo++;
+            }
+            else if (player.X == enemy.X && player.Y == enemy.Y)
+            {
+                preso = true;
+                punteggiogargamella++;
+
+                if (punteggiopuffo <= 0)
+                {
+                    punteggiopuffo = 0;
+                }
+                else
+                {
+                    punteggiopuffo--;
+                }
+            }
+
+            if (preso)
+            {
+                CancellaAlberi(pnl_alberi);//cancella alberi vecchi
+                SpawnAlberi();//rigenera altri alberi
+                (player, enemy, casa) = Spawn();
+            }
+
+            lbl_punteggiog.Text = punteggiogargamella.ToString();
+            lbl_punteggiop.Text = punteggiopuffo.ToString();
+        }
 
         private (Punto player, Punto enemy, Punto casa) Spawn()
         {
@@ -171,49 +204,18 @@ namespace CampoAddestramentoPuffi
             Random rnd = new Random();
             int x, y;
 
-            do
-            {
-                x = rnd.Next(0, 501);
-            } while (x % 40 != 0); // devono essere in posizioni divisibili per 40
+            x = rnd.Next(0, 14) * 40;
 
-            do
-            {
-                y = rnd.Next(0, 381);
-            } while (y % 40 != 0);
+            y = rnd.Next(0, 11) * 40;
 
             return (x, y);
         }
 
-        private void ControllaPunto(int n)
-        {
-            bool preso = false;
-            if (player.X == casa.X && player.Y == casa.Y)
-            {
-                preso = true;
-                punteggiopuffo++;
-            }
-            else if (player.X == enemy.X && player.Y == enemy.Y)
-            {
-                preso = true;
-                punteggiogargamella++;
-                punteggiopuffo--;
-            }
-
-            if (preso)
-            {
-                CancellaAlberi(pnl_alberi);//cancella alberi vecchi
-                SpawnAlberi();//rigenera altri alberi
-                (player, enemy, casa) = Spawn();
-            }
-
-            lbl_punteggiog.Text = punteggiogargamella.ToString();
-            lbl_punteggiop.Text = punteggiopuffo.ToString();
-        }
 
         private void SpawnAlberi()
         {
-            PuntoAlbero = new Punto[10];
-            pnl_alberi = new Panel[10];
+            PuntoAlbero = new Punto[27];
+            pnl_alberi = new Panel[27];
 
             for (int i = 0; i < PuntoAlbero.Length; i++)
             {
