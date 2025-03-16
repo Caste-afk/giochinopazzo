@@ -58,6 +58,7 @@ namespace CampoAddestramentoPuffi
         }
     }
 
+
     public partial class Form1 : Form
     {
         private Punto player;
@@ -77,6 +78,8 @@ namespace CampoAddestramentoPuffi
             SpawnAlberi(); // Genera gli alberi PRIMA di spawnare gli altri elementi
             (player, enemy, casa) = Spawn(); // Spawna casa, giocatore e nemico
 
+            this.KeyDown += new KeyEventHandler(ControlloTastiera);
+            this.KeyPreview = true; 
             Debug.WriteLine($"Posizioni - Puffo: [{player.X}, {player.Y}] | Gargamella: [{enemy.X}, {enemy.Y}] | Casa: [{casa.X}, {casa.Y}]");
         }
 
@@ -211,7 +214,6 @@ namespace CampoAddestramentoPuffi
             return (x, y);
         }
 
-
         private void SpawnAlberi()
         {
             PuntoAlbero = new Punto[27];
@@ -268,5 +270,30 @@ namespace CampoAddestramentoPuffi
             }
         }
 
+        private void ControlloTastiera(object sender, KeyEventArgs e)
+        {
+            string pulsanti;
+            if (turno)
+            { 
+                pulsanti = "WDSA";
+            }
+            else
+            {
+                pulsanti = "ILKJ";
+            }
+            MovimentoTastiera(pulsanti, sender, e);
+        }
+        
+
+        private void MovimentoTastiera(string pulsanti, object sender, KeyEventArgs e)
+        {
+            for (int i =0; i < pulsanti.Length; i++)
+            {
+                if (e.KeyCode == (Keys)pulsanti[i])
+                {
+                    ControllaTurno(i);
+                }
+            }
+        }
     }
 }
